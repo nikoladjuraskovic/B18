@@ -1,0 +1,50 @@
+﻿@model IEnumerable<B18.Models.Prognoza>
+
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<h3>Maksimalne temperature</h3>
+<hr />
+
+<table class="table">
+
+    <tr>
+
+        <th>Sifra</th>
+        <th>NazivMesta</th>
+        <th>MaxTemperatura</th>
+
+    </tr>
+
+    @*TODO: Videti moraju li nazivi mesta biti linkovi ka drugoj stranici sa detaljnim prikazom mesta.
+
+        link bez underline:
+        https://stackoverflow.com/questions/11828829/twitter-bootstrap-how-to-get-rid-of-underlined-button-text-when-hovering-over-a
+        https://www.programmingbasic.com/remove-underline-from-links-in-bootstrap
+        U drugom redu tabele preko ActionLink-a saljemo id grada cije detalje zelimo da vidimo
+    *@
+
+
+    
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@Html.DisplayFor(modelItem => item.Mesto)</td>
+            <td>@Html.ActionLink(item.NazivMesta, "Details", "Maksimalne", new { id = item.Id }, new { @class = "", style = "text-decoration: none" })</td>
+            <td>@Html.DisplayFor(modelItem => item.MaxTemperatura)</td>
+        </tr>
+        
+
+    }
+
+</table>
+
+
+
+
+
+

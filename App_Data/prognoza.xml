@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Root>
+	<Prognoza>
+		<Mesto>001</Mesto>
+		<NazivMesta>Nis</NazivMesta>
+		<MinTemperatura>0</MinTemperatura >
+        <MaxTemperatura >10</MaxTemperatura >
+		<Vreme>Vedro</Vreme>
+	</Prognoza >
+    <Prognoza>
+		<Mesto>002</Mesto>
+		<NazivMesta>Beograd</NazivMesta>
+		<MinTemperatura>-1</MinTemperatura >
+		<MaxTemperatura>7</MaxTemperatura >
+		<Vreme>Kisa</Vreme>
+	</Prognoza >
+	<Prognoza>
+		<Mesto>003</Mesto>
+		<NazivMesta>Kopaonik</NazivMesta>
+		<MinTemperatura>-5</MinTemperatura >
+		<MaxTemperatura>0</MaxTemperatura >
+		<Vreme>Sneg</Vreme>
+	</Prognoza >
+	<Prognoza>
+		<Mesto>004</Mesto>
+		<NazivMesta>Vranje</NazivMesta>
+		<MinTemperatura>5</MinTemperatura >
+		<MaxTemperatura>10</MaxTemperatura >
+		<Vreme>Vedro</Vreme>
+	</Prognoza >
+	<Prognoza>
+		<Mesto>005</Mesto>
+		<NazivMesta>Kraljevo</NazivMesta>
+		<MinTemperatura>3</MinTemperatura >
+		<MaxTemperatura>17</MaxTemperatura >
+		<Vreme>Kisa</Vreme>
+	</Prognoza >
+	<Prognoza>
+		<Mesto>006</Mesto>
+		<NazivMesta>Novi Sad</NazivMesta>
+		<MinTemperatura>-5</MinTemperatura >
+		<MaxTemperatura>2</MaxTemperatura >
+		<Vreme>Vedro</Vreme>
+	</Prognoza >
+	<Prognoza>
+		<Mesto>007</Mesto>
+		<NazivMesta>Loznica</NazivMesta>
+		<MinTemperatura>11</MinTemperatura >
+		<MaxTemperatura >20</MaxTemperatura >
+		<Vreme>Vedro</Vreme>
+	</Prognoza >
+	<Prognoza>
+		<Mesto>008</Mesto>
+		<NazivMesta>Bor</NazivMesta>
+		<MinTemperatura>9</MinTemperatura >
+		<MaxTemperatura>17</MaxTemperatura >
+		<Vreme>Kisa</Vreme>
+	</Prognoza >
+	<Prognoza>
+		<Mesto>009</Mesto>
+		<NazivMesta>Subotica</NazivMesta>
+		<MinTemperatura>5</MinTemperatura >
+		<MaxTemperatura>15</MaxTemperatura >
+		<Vreme>Kisa</Vreme>
+	</Prognoza >
+	<Prognoza>
+		<Mesto>010</Mesto>
+		<NazivMesta>Krusevac</NazivMesta>
+		<MinTemperatura>11</MinTemperatura >
+		<MaxTemperatura>20</MaxTemperatura >
+		<Vreme>Vedro</Vreme>
+	</Prognoza >
+	<Prognoza>
+		<Mesto>011</Mesto>
+		<NazivMesta>Leskovac</NazivMesta>
+		<MinTemperatura>15</MinTemperatura >
+		<MaxTemperatura>23</MaxTemperatura >
+		<Vreme>Kisa</Vreme>
+	</Prognoza >
+	<Prognoza>
+		<Mesto>012</Mesto>
+		<NazivMesta>Aleksinac</NazivMesta>
+		<MinTemperatura>3</MinTemperatura >
+		<MaxTemperatura >13</MaxTemperatura >
+		<Vreme>Vedro</Vreme>
+	</Prognoza >
+</Root> 

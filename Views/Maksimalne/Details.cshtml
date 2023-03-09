@@ -1,0 +1,27 @@
+﻿@model B18.Models.Prognoza
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<h3>Prognoza</h3>
+
+
+<form action="" method="post">
+    Mesto @Html.DropDownList("imena_gradova", @ViewBag.ImenaGradova as List<SelectListItem>)
+    @*@Html.ActionLink("Prikaži", "Details", "Maksimalne", new { id = 1 } )*@
+    <input type="submit" value="Prikaži" />
+</form>
+<br />
+
+Šifra mesta @Html.DisplayFor(model => model.Mesto)
+<br />
+Naziv mesta  @Html.DisplayFor(model => model.NazivMesta)
+<br />
+Min temperatura @Html.DisplayFor(model => model.MinTemperatura)
+<br />
+Max temperatura @Html.DisplayFor(model => model.MaxTemperatura)
+<br />
+Vreme @Html.DisplayFor(model => model.Vreme)
+
