@@ -4,24 +4,50 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
+<link href="~/css/prognoze.css" rel="stylesheet" />
 
 <h3>Prognoza</h3>
 
+<div id="prognoza">
+    <form action="" method="post">
+        Mesto @Html.DropDownList("imena_gradova", @ViewBag.ImenaGradova as List<SelectListItem>)
+        @*@Html.ActionLink("Prikaži", "Details", "Maksimalne", new { id = 1 } )*@
+        <input type="submit" value="Prikaži" />
+    </form>
+    <br />
 
-<form action="" method="post">
-    Mesto @Html.DropDownList("imena_gradova", @ViewBag.ImenaGradova as List<SelectListItem>)
-    @*@Html.ActionLink("Prikaži", "Details", "Maksimalne", new { id = 1 } )*@
-    <input type="submit" value="Prikaži" />
-</form>
+
+
+
+    Šifra mesta &ensp; &ensp; &emsp; &emsp; &emsp; &emsp; @Html.DisplayFor(model => model.Mesto)
+    <br />
+    Naziv mesta &nbsp; &nbsp; &emsp; &emsp; &emsp; &emsp; @Html.DisplayFor(model => model.NazivMesta)
+    <br />
+    Min temperatura &emsp; &emsp; &emsp; @Html.DisplayFor(model => model.MinTemperatura)
+    <br />
+    Max temperatura &nbsp; &ensp; &emsp; &emsp; @Html.DisplayFor(model => model.MaxTemperatura)
+    <br />
+
+</div>
+
 <br />
 
-Šifra mesta @Html.DisplayFor(model => model.Mesto)
-<br />
-Naziv mesta  @Html.DisplayFor(model => model.NazivMesta)
-<br />
-Min temperatura @Html.DisplayFor(model => model.MinTemperatura)
-<br />
-Max temperatura @Html.DisplayFor(model => model.MaxTemperatura)
-<br />
-Vreme @Html.DisplayFor(model => model.Vreme)
 
+@if (Model.Vreme == "Kisa")
+{
+                <img src="@Href("~/Images/rainy-weather-icon-4.jpg")" alt="No Image"/>
+} else if (Model.Vreme == "Sneg")
+            {
+                <img src="@Href("~/Images/weather-icon-png-5.jpg")" alt="No Image" />
+            }
+else if (Model.Vreme == "Vedro")
+            {
+                <img src="@Href("~/Images/sunny-icon-17.png")" alt="No Image" />
+            }
+
+@*
+    Ubacivanje slike:
+        https://learn.microsoft.com/en-us/aspnet/web-pages/overview/ui-layouts-and-themes/9-working-with-images
+        https://www.c-sharpcorner.com/UploadFile/b696c4/how-to-upload-and-display-image-in-mvc/
+    
+*@

@@ -138,6 +138,16 @@ namespace B18.Controllers
 
             ViewBag.ImenaGradova = items;
 
+
+            string vreme = prognoza.Vreme.Trim();
+
+            if (vreme == "Kisa")
+                ViewBag.Vreme = "C:\\Users\\Nikola\\source\\repos\\VebMaturskiZadaci\\B18\\App_Data\\rainy-weather-icon-4.jpg";
+            else if (vreme == "Sneg")
+                ViewBag.Vreme = "C:\\Users\\Nikola\\source\\repos\\VebMaturskiZadaci\\B18\\App_Data\\weather-icon-png-5.jpg";
+            else
+                ViewBag.Vreme = "C:\\Users\\Nikola\\source\\repos\\VebMaturskiZadaci\\B18\\App_Data\\sunny-icon-17.png";
+
             return View(prognoza);
         }
 
@@ -177,7 +187,10 @@ namespace B18.Controllers
                     items.Add(new SelectListItem { Text = entity.NazivMesta, Value = entity.Id.ToString() });
             }
 
+            //saljemo 2 tipa podatka, pa koristimo i ViewBag
             ViewBag.ImenaGradova = items;
+
+            string vreme = trazenaPrognoza.Vreme.Trim();
 
             return View(trazenaPrognoza);
             

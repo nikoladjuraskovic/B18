@@ -138,6 +138,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Data\prognoza.xml" />
+    <Content Include="App_Data\rainy-weather-icon-4.jpg" />
+    <Content Include="App_Data\sunny-icon-17.png" />
+    <Content Include="App_Data\weather-icon-png-5.jpg" />
     <Content Include="Content\bootstrap-grid.css" />
     <Content Include="Content\bootstrap-grid.min.css" />
     <Content Include="Content\bootstrap-grid.rtl.css" />
@@ -154,9 +157,13 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\bootstrap.rtl.css" />
     <Content Include="Content\bootstrap.rtl.min.css" />
+    <Content Include="css\prognoze.css" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Images\rainy-weather-icon-4.jpg" />
+    <Content Include="Images\sunny-icon-17.png" />
+    <Content Include="Images\weather-icon-png-5.jpg" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.esm.js" />
