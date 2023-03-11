@@ -162,6 +162,7 @@
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="Images\rainy-weather-icon-4.jpg" />
+    <Content Include="Images\Status-weather-snow-scattered-day-icon.png" />
     <Content Include="Images\sunny-icon-17.png" />
     <Content Include="Images\weather-icon-png-5.jpg" />
     <Content Include="Scripts\bootstrap.bundle.js" />
